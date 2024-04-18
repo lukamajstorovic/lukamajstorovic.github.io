@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Luka Majstorović - Web Developer and Designer"
+    />
+    <meta
+      name="keywords"
+      content="Luka Majstorović, web developer, designer, portfolio"
+    />
+    <meta name="author" content="Luka Majstorović" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luka Majstorović</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <nav class="navigation-bar" aria-label="Main Navigation">
+      <div class="logo">
+        <img
+          class="img-home"
+          src="steam-logo-black-transparent.png"
+          width="30px"
+          height="30px"
+          alt="Webpage logo"
+          loading="lazy"
+          aria-label="Webpage logo"
+        />
+        <p class="logo-text">Luka Majstorović</p>
+      </div>
+
+      <ul class="navigation-list">
+        <li>
+          <a href="#home" aria-label="Home">Home</a>
+        </li>
+        <li><a href="#portfolio" aria-label="Portfolio">Portfolio</a></li>
+        <li><a href="#about-me" aria-label="About me">About me</a></li>
+        <li>
+          <a href="#testimonials" aria-label="Testimonials">Testimonials</a>
+        </li>
+        <li id="contact-me-li">
+          <a href="#contact-me" aria-label="Contact me">Contact me</a>
+        </li>
+      </ul>
+
+      <div class="button-container">
+        <button
+          class="contact-btn"
+          alt="Contact me button"
+          onclick="scrollToContact()"
+          aria-label="Contact me button"
+        >
+          Contact me
+        </button>
+      </div>
+      <div class="hamburger-container">
+        <button class="hamburger" alt="Toggle menu" aria-label="Toggle menu">
+          ☰
+        </button>
+      </div>
+    </nav>
+
+    <div id="home" class="home-content">
+      <div class="text-and-image-container">
+        <div class="text">
+          <p class="text-bold">Hey, I am Luka</p>
+          <h1>
+            I create <span class="highlight-text">web pages</span> and design
+            solutions
+          </h1>
+          <p>
+            I have worked at FINA for over 10 months.
+            <br />
+            The technologies I use include React and Spring Boot.
+          </p>
+          <div class="get-in-touch-button-container">
+            <button
+              id="get-in-touch-button"
+              aria-label="Get in touch button"
+              onclick="window.location='https://www.linkedin.com/in/lukamajstorovic/'"
+            >
+              Get in touch
+            </button>
+          </div>
+        </div>
+        <div class="nav-image">
+          <img
+            src="steam-logo-black-transparent.png"
+            alt="Image description"
+            width="200"
+            height="200"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div id="expertise" class="expertise-content">
+      <div class="content-container">
+        <div class="text-container">
+          <p>My skills</p>
+          <h1>My expertise</h1>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <img
+              src="steam-logo-black-transparent.png"
+              width="30px"
+              loading="lazy"
+              alt="Strategy and direction"
+            />
+            <h3>Strategy & Direction</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+          <div class="card">
+            <img
+              src="steam-logo-black-transparent.png"
+              width="30px"
+              loading="lazy"
+              alt="branding"
+            />
+            <h3>Branding & Logo</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+          <div class="card">
+            <img
+              src="steam-logo-black-transparent.png"
+              width="30px"
+              height="30px"
+              alt="UXUI"
+              loading="lazy"
+            />
+            <h3>UI & UX Design</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+          <div class="card">
+            <img
+              src="steam-logo-black-transparent.png"
+              width="30px"
+              loading="lazy"
+              alt="webflow"
+            />
+            <h3>Webflow Development</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+        <div id="about-me" class="about-me-container">
+          <div class="image-contaner">
+            <img
+              src="steam-logo-black-transparent.png"
+              width="200px"
+              loading="lazy"
+              alt="about me"
+            />
+          </div>
+          <div class="text-contaner">
+            <p>About</p>
+            <h1>About me</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+              varius faucibus massa sollicitudin amet augue. Nibh metus a semper
+              purus mauris duis. Lorem eu neque, tristique quis duis. Nibh
+              scelerisque ac adipiscing velit non nulla in amet pellentesque.
+            </p>
+            <p>
+              Sit turpis pretium eget maecenas. Vestibulum dolor mattis
+              consectetur eget commodo vitae. Amet pellentesque sit pulvinar
+              lorem mi a, euismod risus r.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="portfolio" class="portfolio-content">
+      <div class="portfolio-content-container">
+        <div class="text-container">
+          <p>Recent projects</p>
+          <h1>My portfolio</h1>
+        </div>
+        <div class="portfolio-card-container">
+          <div class="portfolio-card">
+            <img
+              src="steam-logo-black-transparent.png"
+              loading="lazy"
+              alt="portfolio"
+            />
+            <div class="portfolio-card-bottom">
+              <h3>Order manager</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <a href="https://github.com/lukamajstorovic/order-manager"
+                >View in GitHub 🡵</a
+              >
+              <hr />
+            </div>
+          </div>
+          <div class="portfolio-card">
+            <img
+              src="steam-logo-black-transparent.png"
+              loading="lazy"
+              alt="express todo"
+            />
+            <div class="portfolio-card-bottom">
+              <h3>Express ToDo</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <a href="https://github.com/lukamajstorovic/express-todo-app"
+                >View in GitHub 🡵</a
+              >
+              <hr />
+            </div>
+          </div>
+          <div class="portfolio-card">
+            <img
+              src="steam-logo-black-transparent.png"
+              loading="lazy"
+              alt="tmdb"
+            />
+            <div class="portfolio-card-bottom">
+              <h3>The Movie Database</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <a href="https://github.com/lukamajstorovic/android-vjestina-tmdb"
+                >View in GitHub 🡵</a
+              >
+              <hr />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="testimonials" class="testimonials-content">
+      <div class="testimonials-content-container">
+        <div class="text-container">
+          <p>Clients Feedback</p>
+          <h1>Customer testimonials</h1>
+        </div>
+        <div class="testimonials-card-container">
+          <div class="testimonials-card">
+            <div class="testimonials-card-bottom">
+              <h2>★★★★★</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <div class="profile-info">
+                <img
+                  src="steam-logo-black-transparent.png"
+                  loading="lazy"
+                  alt="name and occupation"
+                />
+                <div class="name-and-occupation">
+                  <p>Dianne Russell</p>
+                  <p>Starbucks</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonials-card">
+            <div class="testimonials-card-bottom">
+              <h2>★★★★★</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <div class="profile-info">
+                <img
+                  src="steam-logo-black-transparent.png"
+                  loading="lazy"
+                  alt="profile info"
+                />
+                <div class="name-and-occupation">
+                  <p>Kristin Watson</p>
+                  <p>Louis Vuitton</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonials-card">
+            <div class="testimonials-card-bottom">
+              <h2>★★★★★</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <div class="profile-info">
+                <img
+                  src="steam-logo-black-transparent.png"
+                  loading="lazy"
+                  alt="name and occupation"
+                />
+                <div class="name-and-occupation">
+                  <p>Kathryn Murphy</p>
+                  <p>McDonald's</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="contact-me" class="form-container">
+      <div class="form-header">
+        <p>Get in touch</p>
+        <h1>Contact me</h1>
+        <p>Lorem ipsum first sentence</p>
+      </div>
+      <form>
+        <div class="row">
+          <div class="input-text">
+            <p>First name</p>
+            <input type="text" />
+          </div>
+          <div class="input-text">
+            <p>Last name</p>
+            <input type="text" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-text">
+            <p>Email</p>
+            <input type="text" />
+          </div>
+          <div class="input-text">
+            <p>Phone number</p>
+            <input type="number" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-text">
+            <p>Choose a topic</p>
+            <select>
+              <option value="0">Select one...</option>
+              <option value="1">Topic 1</option>
+              <option value="2">Topic 2</option>
+              <option value="3">Topic 3</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-text">
+            <p>Message</p>
+            <input type="text" placeholder="Type your message..." />
+          </div>
+        </div>
+        <div class="row">
+          <div class="terms">
+            <label><input type="checkbox" />I accept the terms</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="terms">
+            <button type="submit">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-navigation-bar">
+        <div class="footer-logo">
+          <img
+            class="footer-logo-img"
+            src="steam-logo-black-transparent.png"
+            width="30px"
+            height="30px"
+            alt="Webpage logo"
+            loading="lazy"
+            aria-label="Webpage logo"
+          />
+          <p class="footer-logo-text">Luka Majstorović</p>
+        </div>
+
+        <ul class="navigation-list">
+          <li><a href="#home" aria-label="Home">Home</a></li>
+          <li><a href="#portfolio" aria-label="Portfolio">Portfolio</a></li>
+          <li><a href="#about-me" aria-label="About me">About me</a></li>
+          <li>
+            <a href="#testimonials" aria-label="Testimonials">Testimonials</a>
+          </li>
+          <li id="contact-me-li">
+            <a href="#contact-me" aria-label="Contact me">Contact me</a>
+          </li>
+        </ul>
+
+        <div class="button-container">
+          <button
+            class="contact-btn"
+            alt="Contact me button"
+            onclick="scrollToContact()"
+            aria-label="Contact me button"
+          >
+            Contact me
+          </button>
+        </div>
+        <div class="hamburger-container">
+          <button class="hamburger" alt="Toggle menu" aria-label="Toggle menu">
+            ☰
+          </button>
+        </div>
+      </div>
+      <hr />
+      <p>Made by Luka Majstorović</p>
+    </footer>
+  </body>
+</html>
