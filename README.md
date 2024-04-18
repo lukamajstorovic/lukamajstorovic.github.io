@@ -1,6 +1,6 @@
 # LV 1 zadatak - Osobna stranica
 
-### LINK:
+### LINK: https://lukamajstorovic.github.io/
 
 <hr />
 
